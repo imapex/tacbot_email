@@ -1,14 +1,11 @@
-# Event Driven QoS
+# TAC bot - Email Daemon
 
 # Description
 
-Event Driven QoS is a simple demo application illustrating programmatic control of APIC-EM to change
-QoS parameters in an attached network. This is driven by an external event. In the initial implementation,
-the application will promote facebook traffic when an event is detected; the inspiration came from
-Facebook's ability to "check in" as "safe" in the event of a catastrophic event. In the initial implementation,
-the event trigger is a static URL call. The application could potentially allow for the trigger to be an
-external event, such as breaking news events, trending social media keywords, etc.
-
+This is a simple email interface to the Spark TAC bot. It will watch a 
+mailbox for incoming email from foosball and use those notifications
+to create a Spark room with the TAC bot and the requesting users
+as participants.
 
 # Installation
 
@@ -21,17 +18,13 @@ Prerequisites
 * [Flask](http://flask.pocoo.org)
 * [Requests](http://docs.python-requests.org/en/master/)
 
-The front end application makes use of [JQuery](http://jquery.com) and [Chosen](https://harvesthq.github.io/chosen/);
-separate installation of these libraries is not required as they are linked from
-public CDN networks.
-
 ## Downloading
 
 Option A:
 
 If you have git installed, clone the repository
 
-    git clone https://github.com/imapex/ed-qos
+    git clone https://github.com/imapex/tacbot_email
 
 Option B:
 
